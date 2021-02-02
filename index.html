@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuente googleFonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Juego de memoria</title>
+</head>
+<body>
+    <!-- MENSAJE DE ALERTA AL PERDER -->
+    <div class="alerta">
+        <div class="mensaje">
+            <h3>Oooops!! Perdiste</h3>
+            <p>Vuelve a intentarlo</p>
+            <button class="reiniciar">Volver a jugar</button>
+        </div>
+    </div>
+    <!-- MENSAJE DE ALERTA AL GANAR -->
+    <div class="alertaGanar">
+        <div class="mensaje">
+            <h3>Genial Ganaste!!!</h3>
+            <p>Vuelve a intentarlo</p>
+            <button class="iniciar">Volver a jugar</button>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="acciones">
+            <p>Tiempo Restante <span id="tiempo">90</span></p>
+            <p>Intentos <span id="intentos">0</span></p>
+        </div>
+        <div id="juego"><!-- TARJETAS TRAIDAS DESDE JAVASCRIPT--></div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
